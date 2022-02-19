@@ -32,6 +32,7 @@ header{
     display: grid;
     grid-template-rows: 1fr auto;
     border: solid red 4px;
+    margin: 0 1rem;
 }
 .book-title{
     font-weight: 600;
