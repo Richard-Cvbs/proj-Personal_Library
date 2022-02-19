@@ -21,6 +21,24 @@ header{
     height: 100%;
     grid-template-rows: repeat(auto-fit, minmax(100px,200px));
 }
+.book-remove{
+    border-radius: 50%;
+    background-color: #FCA5A5;
+    box-shadow: none;
+    border: solid #FDBA74;
+}
+.book-remove:hover{
+    background-color: #FECACA;
+}
+.book-remove:active{
+    background-color: #F87171;
+}
+
+
+
+
+
+
 .add-button{
     display: flex;
     align-items: center;
@@ -30,11 +48,6 @@ header{
     bottom: 5vh;
     right: 5vh;
 }
-
-
-
-
-
 /* Imported button from https://getcssscan.com/css-buttons-examples */
 .button-73 {
   appearance: none;
