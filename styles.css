@@ -3,12 +3,14 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E0F2FE;
 }
 header{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background-color: #F5F5F4;
+    background-color: #E5E5E5;
     padding: 1rem;
 
 }
@@ -19,18 +21,68 @@ header{
 .library-cont{
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(auto-fit, minmax(100px,200px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 2rem 1rem;
 }
-.book-remove{
+.book-item{
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: #FEF08A;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    border: solid red 4px;
+}
+.book-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.library-legend{
+  grid-column: 1/-1;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: .75rem;
+  background-color: #FCA5A5;
+  padding-left: 1.25rem;
+}
+.book-text{
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: blue double .5rem;
+  border-style:solid;
+  border-radius: 5%;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+.button-cont{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+.book-remove,
+.book-toggleRead{
     border-radius: 50%;
     background-color: #FCA5A5;
     box-shadow: none;
     border: solid #FDBA74;
 }
-.book-remove:hover{
+.book-remove:hover,
+.book-toggleRead:hover{
     background-color: #FECACA;
 }
-.book-remove:active{
+.book-remove:active,
+.book-toggleRead:active{
     background-color: #F87171;
 }
 
