@@ -1,0 +1,23 @@
+html,
+body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #F5F5F4;
+    padding: 1rem;
+
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.library-cont{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(auto-fit, minmax(100px,200px));
+}
