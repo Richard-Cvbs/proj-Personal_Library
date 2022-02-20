@@ -99,3 +99,17 @@ function toggleReadAct(e,Book){
     let readNode = thisBook.querySelector('.book-read')
     readNode.textContent = Book.readValue()
 }
+function toggleFormListen(){
+    const addButton = document.querySelector('.add-button')
+    addButton.addEventListener('click', e=>{
+        console.log(e.target)
+        toggleForm(e.target)
+    })
+}
+function toggleForm(e){
+    let thisFooter = e.closest('footer')
+    let thisForm = thisFooter.querySelector('.form-cont')
+    thisForm.classList.toggle('hidden')
+    console.log(thisForm)
+}
+toggleFormListen()
