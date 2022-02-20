@@ -89,7 +89,20 @@ header{
 .hidden{
   display: none;
 }
-
+.submitBttn{
+  font-size: 2rem;
+  background-color: #4ADE80;
+  color: white;
+  padding: .25rem;
+  border: solid #10B981 4px;
+  border-radius: 12px;
+}
+.submitBttn:hover{
+  background-color: #86EFAC;
+}
+.submitBttn:active{
+  background-color: #22C55E;
+}
 
 
 
