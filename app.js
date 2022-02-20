@@ -125,11 +125,10 @@ function submitListen(){
         for (let entry of currentFormData){
             submitAct(entry,currentBook)
             console.log(currentBook)
-/*             splitIntoValues(currentBook) 
- */        } 
+        } 
         addBookToLibrary(splitIntoValues(currentBook))
-        Event.preventDefault()
-    })
+         Event.preventDefault()
+     })
 }
 submitListen()
 function submitAct(entry, currentBook){
