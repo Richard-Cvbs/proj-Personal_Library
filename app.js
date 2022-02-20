@@ -14,7 +14,11 @@ function Book(title,author,pages,read){
         } return this.read = true
     }
 }
-const Book1 = new Book("Pride and Prejudice", "Jane Austen", "334", true)
+
+
+
+
+
 const myLibrary = [];
 function addItem(Book){
     const container = document.querySelector(".library-cont")
@@ -146,3 +150,11 @@ function yesornoToBoolean(Value){
         return true
     } return false
 }
+const Book1 = new Book("Pride and Prejudice", "Jane Austen", "334", false)
+const Book2 = new Book("A Clockwork Orange","Anthony Burgess","160",true)
+const Book3 = new Book("1984","George Orwell","328",true)
+const Book4 = new Book("To Kill a Mockingbird","Harper Lee","281",false)
+addBookToLibrary(Book1);
+addBookToLibrary(Book2);
+addBookToLibrary(Book3);
+addBookToLibrary(Book4);
