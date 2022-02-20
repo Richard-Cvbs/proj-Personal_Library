@@ -113,3 +113,36 @@ function toggleForm(e){
     console.log(thisForm)
 }
 toggleFormListen()
+function submitListen(){
+    const currentForm = document.querySelector('.form-cont')
+    currentForm.addEventListener('submit', Event=>{
+        currentFormData = new FormData(currentForm)
+        let currentBook = []
+        for (let entry of currentFormData){
+            submitAct(entry,currentBook)
+            console.log(currentBook)
+/*             splitIntoValues(currentBook) 
+ */        } 
+        addBookToLibrary(splitIntoValues(currentBook))
+        Event.preventDefault()
+    })
+}
+submitListen()
+function submitAct(entry, currentBook){
+    currentBook.push(entry[1])
+    console.log(currentBook)
+    return
+}
+function splitIntoValues(currentBook){
+    let title = currentBook[0]
+    let author = currentBook[1]
+    let pages = currentBook[2]
+    let read = yesornoToBoolean(currentBook[3])
+    console.log(title,author,pages,read)
+    return BookObject = new Book(title,author,pages,read)
+    } 
+function yesornoToBoolean(Value){
+        if (Value ==="Yes"){
+        return true
+    } return false
+}

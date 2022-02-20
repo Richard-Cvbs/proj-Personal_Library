@@ -33,11 +33,11 @@
     <footer>
         <form class="form-cont hidden">
             <label for="form-title">Title</label>
-            <input class="form-input" type="text" name="form-title" id="form-title">
+            <input required class="form-input" type="text" name="form-title" id="form-title">
             <label for="form-author">Author</label>
-            <input class="form-input" type="text" name="form-author" id="form-author">
+            <input required class="form-input" type="text" name="form-author" id="form-author">
             <label for="form-pages">Pages</label>
-            <input class="form-input form-number" min="0" type="number" name="form-pages" id="form-pages">
+            <input required class="form-input form-number" min="0" type="number" name="form-pages" id="form-pages">
             <div class="form-bttnCont">
                 <div class="bttn-cont">
                     <input id="form-bttnYes" name="form-bttn" type="radio" value="Yes" checked>
@@ -48,7 +48,7 @@
                     <label for="form-bttnNo">No</label>
                 </div>
             </div>
-            <button type="button" class="submitBttn">Add to List!</button>
+            <button type="submit" class="submitBttn">Add to List!</button>
         </form>
         <button class="add-button button-73" type="button">
             <img src="/assets/play_lesson_black_36dp.svg" alt="icon">
