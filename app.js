@@ -61,7 +61,7 @@ function addItem(Book){
     })
 
     const toggleReadImg = document.createElement("img")
-    toggleReadImg.setAttribute("src", "/assets/menu_book_black_36dp.svg")
+    toggleReadImg.setAttribute("src", "assets/menu_book_black_36dp.svg")
     toggleReadBttn.appendChild(toggleReadImg)
 
     bttnContainer.appendChild(toggleReadBttn)
@@ -73,7 +73,7 @@ function addItem(Book){
     })
     
     const removeBookImg = document.createElement('img')
-    removeBookImg.setAttribute("src", "/assets/remove_black.svg")
+    removeBookImg.setAttribute("src", "assets/remove_black.svg")
     removeBookButtn.appendChild(removeBookImg)
 
     bttnContainer.appendChild(removeBookButtn)
